@@ -3,21 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | 散步的蜗牛</title>
+  <title>散步的蜗牛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="前端日常bug整理(持续更新)@[前端开发工程师|孙松|sunsongyeah@163.com]
+1. android手机reload刷新页面失效window.location.reload();  
+ 问题：使用reload方法刷新页面在安卓手机上失效
+ 分析：reload方法可选参数，默认为 false，从客户端缓存里取当前页。当参数为true时，则以 GET 方式，从服务端取最新的页面, 相">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/hello-world/index.html">
+<meta property="og:title" content="散步的蜗牛">
+<meta property="og:url" content="http://yoursite.com/2017/前端日常bug整理(持续更新)/index.html">
 <meta property="og:site_name" content="散步的蜗牛">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-03-31T09:02:10.000Z">
+<meta property="og:description" content="前端日常bug整理(持续更新)@[前端开发工程师|孙松|sunsongyeah@163.com]
+1. android手机reload刷新页面失效window.location.reload();  
+ 问题：使用reload方法刷新页面在安卓手机上失效
+ 分析：reload方法可选参数，默认为 false，从客户端缓存里取当前页。当参数为true时，则以 GET 方式，从服务端取最新的页面, 相">
+<meta property="og:updated_time" content="2017-04-07T07:10:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="散步的蜗牛">
+<meta name="twitter:description" content="前端日常bug整理(持续更新)@[前端开发工程师|孙松|sunsongyeah@163.com]
+1. android手机reload刷新页面失效window.location.reload();  
+ 问题：使用reload方法刷新页面在安卓手机上失效
+ 分析：reload方法可选参数，默认为 false，从客户端缓存里取当前页。当参数为true时，则以 GET 方式，从服务端取最新的页面, 相">
   
   
     <link rel="icon" href="/favicon.png">
@@ -82,7 +88,7 @@ Quick">
     </nav>
     <div id="search-form-wrap">
       <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
-        <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+        <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="검색">
         <input type="submit" value="" class="search-form-submit">
         <input name=tn type=hidden value="bds">
         <input name=cl type=hidden value="3">
@@ -106,43 +112,46 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-前端日常bug整理(持续更新)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/hello-world/" class="article-date">
-  <time datetime="2017-03-31T09:02:10.000Z" itemprop="datePublished">2017-03-31</time>
+    <a href="/2017/前端日常bug整理(持续更新)/" class="article-date">
+  <time datetime="2017-04-07T07:05:34.000Z" itemprop="datePublished">2017-04-07</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <h2 id="前端日常bug整理-持续更新"><a href="#前端日常bug整理-持续更新" class="headerlink" title="前端日常bug整理(持续更新)"></a>前端日常bug整理(持续更新)</h2><p>@[前端开发工程师|孙松|sunsongyeah@163.com]</p>
+<h4 id="1-android手机reload刷新页面失效"><a href="#1-android手机reload刷新页面失效" class="headerlink" title="1. android手机reload刷新页面失效"></a>1. android手机reload刷新页面失效</h4><pre><code>window.location.reload();  
+</code></pre><p> <strong>问题：</strong>使用reload方法刷新页面在安卓手机上失效</p>
+<p> <strong>分析：</strong>reload方法可选参数，默认为 false，从客户端缓存里取当前页。当参数为true时，则以 GET 方式，从服务端取最新的页面, 相当于客户端点击 F5(“刷新”)。</p>
+<p> 但对于安卓手机微信中的浏览器，reload只是从缓存中装载文档，所以当我们使用reload方法时，是失效的。</p>
+<p> <strong>解决办法：</strong></p>
+<pre><code>window.location.href = window.location.href+&apos;?time=&apos;+((new Date()).getTime());
+</code></pre><p>使用window.location.href=”window.location.href+随机数”的方法，用location.href代替reload()。加随机参数确保页面不从缓存中装载文档。</p>
+<p> <strong>拓展：</strong>使用go()方法加载历史列表中的某个具体的页面。</p>
+<pre><code>history.go(1) //前进
+history.go(0) //刷新
+history.go(-1) //后退
+</code></pre><h4 id="2-ios-video标签自动跳出全屏播放视频"><a href="#2-ios-video标签自动跳出全屏播放视频" class="headerlink" title="2. ios video标签自动跳出全屏播放视频"></a>2. ios video标签自动跳出全屏播放视频</h4><p> <strong>问题：</strong>video标签播放视频时在ios中会自动跳出全屏</p>
+<p>  <strong>解决办法：</strong><br>ios10以上系统，只需要在video标签加上playsinline属性（webkit-playsinline）<br>ios10以下的借助js库 iphone-inline-video.browser.js实现。</p>
+<h4 id="3-ios页面overflow-hidden之后页面能拖拽"><a href="#3-ios页面overflow-hidden之后页面能拖拽" class="headerlink" title="3. ios页面overflow hidden之后页面能拖拽"></a>3. ios页面overflow hidden之后页面能拖拽</h4><p> <strong>问题：</strong>在做H5时，页面body的overflow通常会设置成hidden，但在苹果手机中拖拽页面会有漂浮滚动的效果</p>
+<p>   <strong>解决办法：</strong><br>   禁用touchmove事件即可</p>
+<pre><code>document.body.addEventListener(&apos;touchmove&apos;, function (event){
+event.preventDefault(); //阻止规定事件的默认动作
+    }, false);
+</code></pre><h4 id="4-android手机虚拟键盘影响页面布局"><a href="#4-android手机虚拟键盘影响页面布局" class="headerlink" title="4. android手机虚拟键盘影响页面布局"></a>4. android手机虚拟键盘影响页面布局</h4><p> <strong>问题：</strong>输入框input在安卓手机中使用absolute或者fixed固定定位时，点击输入框之后出现虚拟键盘会影响页面的布局，通常是把网页向上推了一定距离。</p>
+<p>   <strong>解决办法：</strong><br>   主要是虚拟键盘的出现改变了页面元素的高度，将页面高度固定为body体的高度，这样就不会影响了。</p>
+<pre><code>$(&apos;html,body&apos;).height(document.body.clientHeight); 
+</code></pre>
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/hello-world/" data-id="cj0z08sti0000srj4yq7rwt90" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2017/前端日常bug整理(持续更新)/" data-id="cj17htbh000004sdaspjhg8us" class="article-share-link">공유</a>
       
 
       
@@ -152,9 +161,6 @@ Quick">
     
   
 </article>
-
-
-
 
 
 </section>
