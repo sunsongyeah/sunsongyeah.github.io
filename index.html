@@ -103,60 +103,6 @@
   
 
     
-    <article id="post-123" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/123/" class="article-date">
-  <time datetime="2017-04-11T01:46:31.000Z" itemprop="datePublished">2017-04-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="前端edf"><a href="#前端edf" class="headerlink" title="前端edf"></a>前端edf</h2><p>@[前端开发工程师|孙松|sunsongyeah@163.com]</p>
-<h4 id="1-android手机reload刷新页面失效"><a href="#1-android手机reload刷新页面失效" class="headerlink" title="1. android手机reload刷新页面失效"></a>1. android手机reload刷新页面失效</h4><pre><code>window.location.reload();  
-</code></pre><p> <strong>问题：</strong>使用reload方法刷新页面在安卓手机上失效</p>
-<p> <strong>分析：</strong>reload方法可选参数，默认为 false，从客户端缓存里取当前页。当参数为true时，则以 GET 方式，从服务端取最新的页面, 相当于客户端点击 F5(“刷新”)。</p>
-<p> 但对于安卓手机微信中的浏览器，reload只是从缓存中装载文档，所以当我们使用reload方法时，是失效的。</p>
-<p> <strong>解决办法：</strong></p>
-<pre><code>window.location.href = window.location.href+&apos;?time=&apos;+((new Date()).getTime());
-</code></pre><p>使用window.location.href=”window.location.href+随机数”的方法，用location.href代替reload()。加随机参数确保页面不从缓存中装载文档。</p>
-<p> <strong>拓展：</strong>使用go()方法加载历史列表中的某个具体的页面。</p>
-<pre><code>history.go(1) //前进
-history.go(0) //刷新
-history.go(-1) //后退
-</code></pre><h4 id="2-ios-video标签自动跳出全屏播放视频"><a href="#2-ios-video标签自动跳出全屏播放视频" class="headerlink" title="2. ios video标签自动跳出全屏播放视频"></a>2. ios video标签自动跳出全屏播放视频</h4><p> <strong>问题：</strong>video标签播放视频时在ios中会自动跳出全屏</p>
-<p>  <strong>解决办法：</strong><br>ios10以上系统，只需要在video标签加上playsinline属性（webkit-playsinline）<br>ios10以下的借助js库 iphone-inline-video.browser.js实现。</p>
-<h4 id="3-ios页面overflow-hidden之后页面能拖拽"><a href="#3-ios页面overflow-hidden之后页面能拖拽" class="headerlink" title="3. ios页面overflow hidden之后页面能拖拽"></a>3. ios页面overflow hidden之后页面能拖拽</h4><p> <strong>问题：</strong>在做H5时，页面body的overflow通常会设置成hidden，但在苹果手机中拖拽页面会有漂浮滚动的效果</p>
-<p>   <strong>解决办法：</strong><br>   禁用touchmove事件即可</p>
-<pre><code>document.body.addEventListener(&apos;touchmove&apos;, function (event){
-event.preventDefault(); //阻止规定事件的默认动作
-    }, false);
-</code></pre><h4 id="4-android手机虚拟键盘影响页面布局"><a href="#4-android手机虚拟键盘影响页面布局" class="headerlink" title="4. android手机虚拟键盘影响页面布局"></a>4. android手机虚拟键盘影响页面布局</h4><p> <strong>问题：</strong>输入框input在安卓手机中使用absolute或者fixed固定定位时，点击输入框之后出现虚拟键盘会影响页面的布局，通常是把网页向上推了一定距离。</p>
-<p>   <strong>解决办法：</strong><br>   主要是虚拟键盘的出现改变了页面元素的高度，将页面高度固定为body体的高度，这样就不会影响了。</p>
-<pre><code>$(&apos;html,body&apos;).height(document.body.clientHeight); 
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2017/123/" data-id="cj1cvzwlf0000f2da4bqfkasu" class="article-share-link">分享到</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    
-  
-
-    
     <article id="post-前端日常bug整理(持续更新)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/前端日常bug整理(持续更新)/" class="article-date">
@@ -196,7 +142,7 @@ event.preventDefault(); //阻止规定事件的默认动作
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/前端日常bug整理(持续更新)/" data-id="cj1cvzwlk0001f2daxywsbr64" class="article-share-link">分享到</a>
+        <a data-url="http://yoursite.com/2017/前端日常bug整理(持续更新)/" data-id="cj1d4kiby0000zfda6ivjmwem" class="article-share-link">分享到</a>
       
 
       
